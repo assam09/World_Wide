@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <title>World_Wide</title>
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <header>
+    <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+    <a href="" class="logo"><span>W</span>orld<span>W</span>ide</a>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#book">book</a>
+      <a href="#packages">packages</a>
+      <a href="#services">services</a>
+      <a href="#gallary">gallary</a>
+      <a href="#review">review</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="icon">
+      <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+      <i class="fas fa-user" onclick="showform()"></i>
+    </div>
+    <form action="" class="search-form">
+      <input type="search" id="search-bar" placeholder="What You Looking For...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+  <div class="login-form">
+    <i id="Close-form" class="fas fa-times" onclick="closeForm()"></i>
+    <form action="">
+      <h3>Login</h3>
+      <input type="email" class="box" placeholder="Enter Your Email">
+      <input type="password" class="box" placeholder="Enter Your password">
+      <input type="submit" class="btn" value="Login Now">
+      <input type="checkbox" id="remimber">
+      <label for="remimber">remember me</label>
+      <p>Forget password?<a href="">click here</a></p>
+      <p>don'n have account?<a href="">Sign Up</a></p>
+    </form>
+  </div>
+  <!-- End Navbar -->
+  <!-- Start Section Video -->
+  <section class="home" id="home">
+    <div class="contant">
+      <h3>World Wide Make Traveler Easy</h3>
+      <p>Discover New Places With Us,Adventure Awaits</p>
+      <a href="#" class="btn">Discover More</a>
+    </div>
+    <div class="controls">
+      <span class="video-btn blue" data-scr="vidoe/vid1.mp4"></span>
+      <span class="video-btn" data-src="vidoe/vid2.mp4" ></span>
+      <span class="video-btn" data-src="vidoe/vid3.mp4"></span>
+      <span class="video-btn" data-src="vidoe/vid4.mp4"></span>
+      <span class="video-btn" data-src="vidoe/vid5.mp4"></span>
+    </div>
+    <div class="video-controls">
+      <video src="vidoe/vid1.mp4" id="vidoe-slider" loop autoplay muted></video>
+    </div>
+  </section>
+  <!-- End Section Video-->
+  <!-- Start Section book Now -->
+  <section class="book" id="book">
+    <h1 class="heading">
+      <span>B</span>
+      <span>O</span>
+      <span>O</span>
+      <span>K</span>
+      &nbsp;
+      &nbsp;
+      <span>N</span>
+      <span>O</span>
+      <span>W</span>
+    </h1>
+    <div class="row">
+      <div class="imag">
+        <img src="image/images - ٢٠٢٢-٠٥-٢٤T١٢٥٢٢٣.٢٧١.jpeg" alt="">
+      </div>
+      <form action="">
+
+        <div class="inputdiv">
+          <h3>Where To Go</h3>
+          <input type="text" placeholder="Place name">
+        </div>
+        <div class="inputdiv">
+          <h3>How Many</h3>
+          <input type="text" placeholder="Place name">
+        </div>
+        <div class="inputdiv">
+          <h3>Arrival</h3>
+          <input type="text" placeholder="Place name">
+        </div>
+        <div class="inputdiv">
+          <h3>Leaving</h3>
+          <input type="text" placeholder="Place name">
+        </div>
+        <input type="submit" value="Book Now" class="btn">
+
+      </form>
+    </div>
+  </section>
+  <!-- End Section book Now -->
+  <!-- Start Section packages -->
+  <section class="packages" id="packages">
+    <h1 class="heading">
+      <span>P</span>
+      <span>A</span>
+      <span>C</span>
+      <span>K</span>
+      <span>A</span>
+      <span>G</span>
+      <span>E</span>
+      <span>S</span>
+    </h1>
+    <div class="container">
+      <div class="box">
+        <img src="image/1.jpg" alt="">
+        <div class="content">
+          <h3>
+            <i class="fas fa-map-marker-alt"></i>
+            California
+          </h3>
+          <p>Located 14 miles from Yosemite National Park, this lakefront California hotel offers on-site dining, full service marina and water sport...</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">
+            $90.00 <span>$120.00</span>
+          </div>
+          <a href="https://www.bing.com/maps?osid=09fcdfc3-51ff-447e-aa1a-9af21d18ea49&cp=37.319874~-119.641365&lvl=12&v=2&sV=2&form=S00027" class="btn">Check Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/2.jpg" alt="">
+        <div class="content">
+          <h3>
+            <i class="fas fa-map-marker-alt"></i>
+            California
+          </h3>
+          <p>Offering a year-round outdoor pool and spa centre, Chukchansi 
+            Gold Resort & Casino is situated in Coarsegold in the California...
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">
+            $120.00 <span>$150.00</span>
+          </div>
+          <a href="https://www.bing.com/maps?osid=8363d936-8b6c-4400-ab5f-fbf78e9a0801&cp=37.21145~-119.784061&lvl=12&v=2&sV=2&form=S00027" class="btn">Check Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/3.jpg" alt="">
+        <div class="content">
+          <h3>
+            <i class="fas fa-map-marker-alt"></i>
+            California
+          </h3>
+          <p>
+            Located in a quiet and secluded area of Oakhurst, just 16 km away from Yosemite National Park, and 10 minutes' drive to Bass Lake,...
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">
+            $124.00 <span>$150.00</span>
+          </div>
+          <a href="https://www.bing.com/maps?osid=9ea2efd5-fe77-40c5-9571-7db8ce39d953&cp=37.394883~-119.707466&lvl=12&imgid=62c44b16-5006-4ab4-991d-113d20ef50b3&v=2&sV=2&form=S00027" class="btn">Check Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/4.jpg" alt="">
+        <div class="content">
+          <h3>
+            <i class="fas fa-map-marker-alt"></i>
+            California
+          </h3>
+          <p>
+            Just 14 miles from Yosemite National Park,s South Gate, this Oakhurst hotel offers classically furnished rooms with free Wi-Fi and a cable TV...
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">
+            $160.00 <span>$200.00</span>
+          </div>
+          <a href="https://www.bing.com/maps?osid=d5d6a944-25ec-4eb8-8a13-b2ddace6e05f&cp=37.339869~-119.733566&lvl=12&imgid=e7cd1f62-e6f3-4abd-a046-6f5e00f0c046&v=2&sV=2&form=S00027" class="btn">Check Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/5.jpg" alt="">
+        <div class="content">
+          <h3>
+            <i class="fas fa-map-marker-alt"></i>
+            California
+          </h3>
+          <p>
+            Located at California Plaza atop historic Bunker Hill in the heart of downtown Los Angeles, Omni Los Angeles Hotel California Plaza...
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">
+            $50.00 <span>$75.00</span>
+          </div>
+          <a href="https://www.bing.com/maps?osid=39657800-e2da-41b1-8dcf-fd38c17f3775&cp=34.065796~-118.325432&lvl=12&imgid=61593b84-765f-4ff5-9281-ac514e0cde35&v=2&sV=2&form=S00027" class="btn">Check Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/6.jpg" alt="">
+        <div class="content">
+          <h3>
+            <i class="fas fa-map-marker-alt"></i>
+            California
+          </h3>
+          <p>
+            Located in the heart of Monterey's historic Cannery Row, InterContinental The Clement Monterey boasts elegant accommodations,...
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">
+            $100.00 <span>$130.00</span>
+          </div>
+          <a href="https://www.bing.com/maps?osid=af95404b-5a82-496e-b3a9-1c24f2695421&cp=36.629802~-121.975594&lvl=12&imgid=a623d9ad-807e-40ad-a845-82f900e02e36&v=2&sV=2&form=S00027" class="btn">Check Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section packages -->
+  <!-- Start Section services -->
+<div class="services" id="services">
+  <h1 class="heading">
+    <span>S</span>
+    <span>E</span>
+    <span>R</span>
+    <span>V</span>
+    <span>I</span>
+    <span>C</span>
+    <span>E</span>
+    <span>S</span>
+  </h1>
+  <div class="container">
+    <div class="box">
+      <i class="fas fa-hotel"></i>
+      <h3>Affordable hotel</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea expedita, ipsa ipsam eaque impedit quibusdam dolores
+         deserunt consequatur aspernatur.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-utensils"></i>
+      <h3>Food And Drink</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea expedita, ipsa ipsam eaque impedit quibusdam dolores
+         deserunt consequatur aspernatur.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Safty Guide</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea expedita, ipsa ipsam eaque impedit quibusdam dolores
+         deserunt consequatur aspernatur.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-globe-asia"></i>
+      <h3>Around The World</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea expedita, ipsa ipsam eaque impedit quibusdam dolores
+         deserunt consequatur aspernatur.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-plane"></i>
+      <h3>Fastest TraVel</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea expedita, ipsa ipsam eaque impedit quibusdam dolores
+         deserunt consequatur aspernatur.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-hiking"></i>
+      <h3>Adventure</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea expedita, ipsa ipsam eaque impedit quibusdam dolores
+         deserunt consequatur aspernatur.</p>
+    </div>
+  </div>
+</div>
+  <!-- End Section services -->
+  <!-- Start Section gallary -->
+  <div class="gallary" id="gallary">
+    <h1 class="heading">
+      <span>G</span>
+      <span>A</span>
+      <span>L</span>
+      <span>L</span>
+      <span>A</span>
+      <span>R</span>
+      <span>Y</span>
+    </h1>
+    <div class="container">
+      <div class="box">
+        <img src="image/1.1.jpg" alt="">
+        <div class="content">
+          <h3>Amazing Place</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat.</p>
+          <a href="" class="btn">see more</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/1.2.jpg" alt="">
+        <div class="content">
+        <h3>Amazing Place</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat.</p>
+        <a href="https://www.bing.com/maps?osid=3310e761-25c8-4720-bf1e-341f7ccb2520&cp=37.319874~-119.641365&lvl=12&imgid=4a7231b2-1bb5-426a-ae99-ceef087e77b8&v=2&sV=2&form=S00027" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="image/1.3.jpeg" alt="">
+        <div class="content">
+        <h3>Amazing Place</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat.</p>
+        <a href="https://www.bing.com/maps?osid=00b3baef-52ce-4f2d-81ce-ecb0c18fcbff&cp=36.629802~-121.975594&lvl=12&imgid=5b4d7fb9-2503-40ed-9912-3a8b6045cfa1&v=2&sV=2&form=S00027" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="image/1.4.jpg" alt="">
+        <div class="content">
+        <h3>Amazing Place</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat.</p>
+        <a href="https://www.bing.com/maps?osid=549f590f-8cba-47bc-b6e4-6111c63d70d0&cp=37.21145~-119.784061&lvl=12&imgid=372ea3c8-21bf-4f27-8126-db4b2685f87a&v=2&sV=2&form=S00027" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="image/1.5.jpg" alt="">
+        <div class="content">
+        <h3>Amazing Place</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat.</p>
+        <a href="https://www.bing.com/maps?osid=30df4073-4acb-49c6-88f1-d4d324a6d4ca&cp=34.065796~-118.325432&lvl=12&imgid=e43787f7-053b-461f-b1e3-c7f2a0846c68&v=2&sV=2&form=S00027" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="image/1.6.jpg" alt="">
+        <div class="content">
+        <h3>Amazing Place</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat.</p>
+        <a href="https://www.bing.com/maps?osid=fc4ab472-fd38-4bee-b49c-904633f9290f&cp=37.394883~-119.707466&lvl=12&imgid=a1791990-1b9b-4355-93fa-b354cca849da&v=2&sV=2&form=S00027" class="btn">see more</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/1.7.jpg" alt="">
+        <div class="content">
+        <h3>Amazing Place</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat.</p>
+        <a href="https://www.bing.com/maps?osid=76031264-490d-4f74-8f9f-6d120f60ff96&cp=37.339869~-119.733566&lvl=12&imgid=9395e72a-9703-4638-b057-53d1a0147a36&v=2&sV=2&form=S00027" class="btn" >see more</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/1.8.jpg" alt="">
+        <div class="content">
+        <h3>Amazing Place</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat.</p>
+        <a href="https://www.bing.com/maps?osid=76031264-490d-4f74-8f9f-6d120f60ff96&cp=37.339869~-119.733566&lvl=12&imgid=9395e72a-9703-4638-b057-53d1a0147a36&v=2&sV=2&form=S00027" class="btn" >see more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Section gallary -->
+  <!-- Start Section review -->
+  <section class="review" id="review">
+    <h1 class="heading">
+      <span>R</span>
+      <span>E</span>
+      <span>V</span>
+      <span>I</span>
+      <span>E</span>
+      <span>W</span>
+    </h1>
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="image/sa1.jpg" alt="">
+            <h3>Mahmoud Slama</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quia expedita praesentium impedit quaerat vero dolore laborum suscipit amet maxime?</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="image/sa2.jpg" alt="">
+            <h3>Mahmoud Slama</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quia expedita praesentium impedit quaerat vero dolore laborum suscipit amet maxime?</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="image/sa1.jpg" alt="">
+            <h3>Mahmoud Slama</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quia expedita praesentium impedit quaerat vero dolore laborum suscipit amet maxime?</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="image/sa2.jpg" alt="">
+            <h3>Mahmoud Slama</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quia expedita praesentium impedit quaerat vero dolore laborum suscipit amet maxime?</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section review -->
+  <!-- Start Section contact -->
+  <div class="con-tact" id="contact">
+    <h1 class="heading">
+      <span>C</span>
+      <span>O</span>
+      <span>N</span>
+      <span>T</span>
+      <span>A</span>
+      <span>C</span>
+      <span>T</span>
+    </h1>
+    <div class="row">
+      <div class="image">
+        <img src="image/sa3.png" alt="">
+      </div>
+      <form action="">
+        <div class="input-box">
+          <input type="text" placeholder="name">
+          <input type="email" placeholder="email">
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="number">
+          <input type="text" placeholder="subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+        <input type="submit" class="btn" value="send message">
+      </form>
+    </div>
+  </div>
+  <!-- End Section review -->
+  <!-- Start Footer -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magnam repellat ratione iste nihil commodi vero nostrum repudiandae pariatur incidunt!</p>
+        </div>
+        <div class="box">
+          <h3>Quick Linkes</h3>
+          <a href="#home">home</a>
+          <a href="#book">book</a>
+          <a href="#packages">packages</a>
+          <a href="#services">services</a>
+          <a href="#gallary">gallary</a>
+          <a href="#review">review</a>
+          <a href="#contact">contact</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/profile.php?id=100030608933198">Facebook</a>
+          <a href="https://twitter.com/AssemSalama17?t=I2JDQ8I-CjogQCoUkX47Dw&s=35">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">whatsap</a>
+        </div>
+      </div>
+      <h1 class="created">Created By <span>Mahmoud Salama</span> All Right Reserved</h1>
+    </section>
+  <!-- End Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
